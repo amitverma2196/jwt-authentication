@@ -20,7 +20,7 @@ app.post("/create", async (req, res) => {
       res.status(400).send("All input is required");
     }
     // Validate Otp
-    if (phone && (otp === 1055)) {
+    if (phone && (otp === 1835)) {
       const token = await auth.generateAuthToken({phone});
       // save user token
       user.token = token;
